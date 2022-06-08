@@ -1,0 +1,38 @@
+{
+  "name": "loans-app",
+  "version": "1.0.0",
+  "description": "loan app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liza-A/loans-App.git"
+  },
+  "author": "liz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liza-A/loans-App/issues"
+  },
+  "homepage": "https://github.com/liza-A/loans-App#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "express-validator": "^5.3.0",
+    "mongoose": "^6.2.6",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "mocha": "^10.0.0",
+    "prettier": "2.6.2"
+  }
+}

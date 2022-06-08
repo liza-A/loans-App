@@ -1,0 +1,50 @@
+body{
+  margin-left:23%;
+  width: 55%;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+
+ .ka-container{
+      max-width: 700px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.15)
+} 
+
+ #form{
+  padding: 25px 30px; 
+  margin: 0;
+  display:flex;
+} 
+
+ #butt{
+    float: left;
+} 
+
+.ka-container .title{
+  height: 100px;
+    background: url(/img/0_FornHeader.png);
+  color: #fff;
+  
+  
+
+} 
+
+#span{
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f4e79;
+}
+
+#button{
+  float: right;
+  width: 300px;
+  font-size: larger;
+  font-weight: 30px;
+  background-color: #1f4e79;
+}

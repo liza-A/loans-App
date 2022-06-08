@@ -1,0 +1,60 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/bootstrap-5.1.3-dist/css/bootstrap.css')
+  link(rel='stylesheet' href='/css/registration.css')
+  title Client Registration Form
+
+  .title
+  span#span Loan Request Form
+  form#form.row.g-3(name='clientRegistration' method='POST' action='/registration' onsubmit='return regValidation();')
+    .col-md-6
+      label.form-label(for='inputname') Surname
+      input#surname.form-control(type='text' name='surname')
+      small#surnameError
+    .col-6
+      label.form-label(for='inputcontact') Given Name
+      input#givenname.form-control(type='text' name='givenname')
+      small#givennameError
+    .col-6
+      label.form-label(for='inputniN') NIN
+      input#nin.form-control(type='text' name='nin')
+      small#ninError
+    .col-md-6
+      label.form-label(for='inputDate') Date of Birth
+      input#date.form-control(type='date' name='date')
+      small#dateError
+    .col-md-6
+      label.form-label(for='inputoccupation')
+        | Occupation
+      input#occupation.form-control(type='text' name='occupation')
+      small#occupationError
+    .col-md-6
+      label.form-label(for='inputwork') Place Of Work
+      input#work.form-control(type='text' name='work')
+      small#workError
+    .col-md-6
+      label.form-label(for='inputGender') Gender
+      select#gender.form-select(type='text' name='gender')
+        option(value='Default' selected='') --Select Gender--
+        option(value='Female') Female
+        option(value='Male') Male
+      small#genderError
+    .col-md-6
+      label.form-label(for='inputloan') Loan Amount
+      input#loan.form-control(type='text' name='loan')
+      small#loanError
+    .col-md-6
+      label.form-label(for='inputsecurity') Loan Security
+      input#security.form-control(type='text' name='security')
+      small#securityError
+    .col-md-6
+      label.form-label(for='inputfallback') Fall Back Security
+      input#fallback.form-control(type='text' name='fallback')
+      small#fallbackError
+    .col-12
+      button#button.btn.btn-primary(type='submit' value='Submit' name='') Register
+script(src='/bootstrap-5.1.3-dist/js/bootstrap.js')
+//- script(src='/js/val.js')
