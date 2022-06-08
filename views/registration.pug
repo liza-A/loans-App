@@ -8,7 +8,7 @@ head
   title Client Registration Form
 
   .title
-  span#span Loan Request Form
+  span#span  Request Loan Form
   form#form.row.g-3(name='clientRegistration' method='POST' action='/registration' onsubmit='return regValidation();')
     .col-md-6
       label.form-label(for='inputname') Surname
@@ -55,6 +55,6 @@ head
       input#fallback.form-control(type='text' name='fallback')
       small#fallbackError
     .col-12
-      button#button.btn.btn-primary(type='submit' value='Submit' name='') Register
+      button#button.btn.btn-primary(type='submit' value='Submit' name='') Submit
 script(src='/bootstrap-5.1.3-dist/js/bootstrap.js')
 //- script(src='/js/val.js')
