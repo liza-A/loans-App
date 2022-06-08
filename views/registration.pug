@@ -9,7 +9,7 @@ head
 
   .title
   span#span  Request Loan Form
-  form#form.row.g-3(name='clientRegistration' method='POST' action='/registration' onsubmit='return regValidation();')
+  form#form.row.g-3(name='clientRegistration' method='POST' action='/registration' onsubmit='Geeks()')
     .col-md-6
       label.form-label(for='inputname') Surname
       input#surname.form-control(type='text' name='surname')
@@ -57,4 +57,7 @@ head
     .col-12
       button#button.btn.btn-primary(type='submit' value='Submit' name='') Submit
 script(src='/bootstrap-5.1.3-dist/js/bootstrap.js')
-//- script(src='/js/val.js')
+script.
+  function Geeks() {
+  alert("Form submitted successfully.") ;
+  }

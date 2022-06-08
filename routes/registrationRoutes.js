@@ -56,7 +56,7 @@ router.post('/registration', (req, res) => {
             }
             else {
                 // alert('you have successfully registered')
-                console.log('Kylie, you have successfully registered your First  client');
+                console.log('successfully registered your First  client');
                 res.redirect('/')
             }
         })
