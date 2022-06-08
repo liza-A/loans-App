@@ -14,6 +14,7 @@ const app = express();
 // Importing Routes
 
 const registrationRoutes = require('./routes/registrationRoutes');
+const landingRoutes = require('./routes/landingRoutes');
 // const { PORT } = process.env
 // const { WELCOME_MESSAGE, DATABASE_URL } = process.env
 // creating a connection between our Controller and Database
@@ -44,6 +45,8 @@ app.use (express.json());
 
 // using my imported routes
 app.use('/', registrationRoutes);
+app.use('/', landingRoutes);
+
 
 
 // This message that appears in case someone searches for a route that doesnt exist on my server
@@ -66,3 +69,5 @@ const port = process.env.PORT
 app.listen(port,()=>{
     console.log(`server started on port ${port}`)
 });
+
+module.exports = app; // for testing
