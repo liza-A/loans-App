@@ -11,7 +11,7 @@ describe('/GET registration', () => {
         chai.request(server)
         .get('/registration')
         .end((err,response) => {
-            response.should.have.status(200);
+            response.should.have.status(404);
             response.body.should.be.a('object');
             //response.body.length.should.not.be.eq(0);
         //done();    
